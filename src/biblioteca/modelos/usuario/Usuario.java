@@ -78,7 +78,7 @@ public abstract class Usuario {
                 ", apellido='" + apellido + '\'' +
                 ", dui='" + dui + '\'' +
                 ", username='" + username + '\'' +
-                ", password='********'" +  // ← ocultar siempre
+                ", password='********'" +  // Oculto por seguridad
                 ", correo='" + correo + '\'' +
                 ", telefono='" + telefono + '\'' +
                 ", tipoUsuario='" + tipoUsuario + '\'' +

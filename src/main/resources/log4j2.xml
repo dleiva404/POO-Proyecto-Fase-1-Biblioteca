@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration packages="biblioteca.modulos">
+    <Appenders>
+        <!-- Consola -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] [%t] [%level] [%logger{1}] - %msg%n" />
+        </Console>
+
+        <!-- Log General -->
+        <File name="General" fileName="logs/biblioteca.log" append="true">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] [%t] [%level] [%logger{1}] - %msg%n" />
+        </File>
+
+        <!-- Log Errores -->
+        <File name="Errores" fileName="logs/errores.log" append="true">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] [%t] [%level] [%logger{1}] - %msg%n" />
+            <Filters>
+                <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY" />
+            </Filters>
+        </File>
+
+        <!-- Log Préstamos -->
+        <File name="Prestamos" fileName="logs/prestamos.log" append="true">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] [%t] [%level] [%logger{1}] - %msg%n" />
+        </File>
+
+        <!-- Log Devoluciones -->
+        <File name="Devoluciones" fileName="logs/devoluciones.log" append="true">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] [%t] [%level] [%logger{1}] - %msg%n" />
+        </File>
+
+        <!-- Log Moras -->
+        <File name="Moras" fileName="logs/moras.log" append="true">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] [%t] [%level] [%logger{1}] - %msg%n" />
+        </File>
+
+        <!-- Log Usuarios -->
+        <File name="Usuarios" fileName="logs/usuarios.log" append="true">
+            <PatternLayout pattern="[%d{yyyy-MM-dd HH:mm:ss}] [%t] [%level] [%logger{1}] - %msg%n" />
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <!-- Logger Préstamos -->
+        <Logger name="biblioteca.modulos.PrestamoManager" level="info" additivity="false">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="General" />
+            <AppenderRef ref="Prestamos" />
+        </Logger>
+
+        <!-- Logger Devoluciones -->
+        <Logger name="biblioteca.modulos.DevolucionManager" level="info" additivity="false">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="General" />
+            <AppenderRef ref="Devoluciones" />
+        </Logger>
+
+        <!-- Logger Moras -->
+        <Logger name="biblioteca.modulos.MoraManager" level="info" additivity="false">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="General" />
+            <AppenderRef ref="Moras" />
+        </Logger>
+
+        <!-- Logger Usuarios -->
+        <Logger name="biblioteca.modulos.UsuarioManager" level="info" additivity="false">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="General" />
+            <AppenderRef ref="Usuarios" />
+        </Logger>
+
+        <!-- Logger Validador -->
+        <Logger name="biblioteca.modulos.ValidadorPrestamo" level="warn" additivity="false">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="General" />
+        </Logger>
+
+        <!-- Root Logger -->
+        <Root level="info">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="General" />
+            <AppenderRef ref="Errores" />
+        </Root>
+    </Loggers>
+</Configuration>

@@ -1,0 +1,182 @@
+body {
+  background: #003378;
+}
+
+.card-login {
+  background-color: #003378;
+  border: 3.5px solid #ffb800;
+  border-radius: 10px;
+  color: white;
+}
+
+.card-login img {
+  width: 200px;
+  height: auto;
+}
+
+.card-login label {
+  color: white;
+}
+
+.card-login h2 {
+  color: white;
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+h1,
+h2 {
+  color: white;
+}
+
+h6 {
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+p {
+  color: white;
+}
+
+nav.navbar {
+  background: #003378 !important;
+  border-bottom: 3px solid #ffb800;
+  padding: 14px 24px;
+}
+
+.card {
+  background-color: white;
+  border: 3px solid #ffb800 !important;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card h5 {
+  color: #000000;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #ffb800 !important;
+  border-color: #ffb800 !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover h5 {
+  color: white !important;
+}
+
+.btn-logout {
+  background-color: #ffb800;
+  border: 2px solid #ffb800;
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+  background-color: rgb(255, 0, 0) !important;
+  color: #ffffff !important;
+  border-color: rgb(255, 0, 0) !important;
+}
+
+.card-material {
+  background-color: #003378;
+  border: 3px solid #ffffff !important;
+  border-radius: 10px;
+}
+
+body {
+  background-color: #003378;
+  min-height: 100vh;
+}
+
+.marco {
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 30px 40px;
+}
+
+.form-label {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.lbl-der {
+  text-align: right;
+}
+
+.readonly-campo {
+  background-color: #dcdcdc;
+  color: #555;
+}
+
+.detalles-box {
+  border: 1px solid #fff;
+  border-radius: 6px;
+  padding: 15px 20px;
+}
+
+.detalles-titulo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  width: auto;
+  padding: 0 8px;
+  margin-bottom: 10px;
+}
+
+.btn-guardar {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  min-width: 200px;
+}
+
+.btn-guardar:hover {
+  background-color: #118102;
+  color: #ffffff;
+}
+
+.btn-volver {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  min-width: 200px;
+}
+
+.btn-volver:hover {
+  background-color: #ffb800;
+  color: #ffffff;
+}
+
+.detalle-tipo {
+  display: none;
+}
+
+.btn-registrarse {
+  background-color: #ffb800;
+  color: #000;
+  font-weight: bold;
+}
+
+.btn-registrarse:hover {
+  background-color: #118102;
+  color: #ffffff;
+}
+
+.btn-actualizar {
+  background-color: #ffb800;
+  color: #000;
+  font-weight: bold;
+}
+
+.btn-actualizar:hover {
+  background-color: #118102;
+  color: #ffffff;
+}
